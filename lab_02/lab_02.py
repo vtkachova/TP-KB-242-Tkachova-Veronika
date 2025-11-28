@@ -8,7 +8,7 @@ def load_from_csv(inputfile):
     global student_list
     try:
         with open(inputfile, newline='', encoding='utf-8') as file:
-            reader = csv.DictReader(file, delimiter=';') 
+            reader = csv.DictReader(file) 
             student_list = list(reader)
         print("Data successfully loaded from CSV.\n")
     except FileNotFoundError:
@@ -19,7 +19,7 @@ def save_to_csv(inputfile):
     global student_list
     with open(inputfile, mode='w', newline='', encoding='utf-8') as file:
         fieldnames = ["name", "phone", "group", "email"]
-        writer = csv.DictWriter(file, fieldnames=fieldnames, delimiter=';')
+        writer = csv.DictWriter(file, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(student_list)
     print("Data saved to CSV.\n")

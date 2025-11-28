@@ -1,5 +1,5 @@
-name;phone;group;email
-Bob;0631111111;KB-242;bob@gmail.com
-Emma;0632222222;KB-242;emma@gmail.com
-Jon;0633333333;KB-242;jon@gmail.com
-Zak;0634444444;KB-242;zak@gmail.com
+name,phone,group,email
+Bob,0631111111,KB-242,bob@gmail.com
+Emma,0632222222,KB-242,emma@gmail.com
+Jon,0633333333,KB-242,jon@gmail.com
+Zak,0634444444,KB-242,zak@gmail.com
